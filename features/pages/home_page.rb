@@ -43,11 +43,4 @@ class Home < InterfaceFramework
     fJson.write(tempHash)
     fJson.close
   end
-
-  def validarInformacoesDoCanal
-    require "json"
-    json = File.read("C:/Projetos/ruby/Mobile/Itau/temp.json").to_json
-    puts json["valor"]
-    #puts my_hash["valor"]
-  end
 end
